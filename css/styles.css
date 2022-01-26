@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("/assets/fonts/Outfit/static/Outfit-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  line-height: 150%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --deepwhite: #d3d6d7;
+  --blue: #225fac;
+  --grey: #ededed;
+  --grey-d-1: #77838e;
+  --green-d-3: #06d85315;
+  --black: #000;
+  --red: #ff4040;
+  --black: #333;
+  --grey: #eee;
+}
+
+input {
+  border: none;
+  background-color: var(--grey);
+  padding: 0.7rem;
+  padding-left: 1.5rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border: 0.1rem solid var(--grey);
+  outline: none;
+}
+
+select {
+  margin-top: 0.5rem;
+  padding: 0.75rem 2rem 0.75rem 1.25rem;
+  border-radius: 2rem;
+  border: 0.1rem solid var(--grey);
+  background: var(--grey);
+  color: var(--grey-d-1);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(/assets/download.svg);
+  background-repeat: no-repeat;
+  background-position-x: 96%;
+  outline: none;
+  width: 100%;
+  display: block;
+  background-position-y: 50%;
+}
+
+.main-container {
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.9rem 0;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu > p {
+  font-size: 0.875rem;
+  color: var(--grey-d-1);
+  padding: 0.5rem 1.6rem;
+  border-bottom: 0.3rem solid transparent;
+}
+.menu > p:nth-child(1) {
+  border-bottom: 0.3rem solid var(--blue);
+}
+.menu-line {
+  border-top: 0.1rem solid var(--deepwhite);
+}
+/*-----------------
+   Header css end
+ -----------------*/
+.profile {
+  margin-top: 2rem;
+}
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--black);
+}
+.profile > p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--grey-d-1);
+}
+.profile > p::after {
+  content: "*";
+  color: var(--red);
+}
+
+::placeholder {
+  font-size: 0.833rem;
+}
+.profile > .name {
+  width: 100%;
+}
+
+/*-----------------
+  Profile css end
+------------------*/
+
+.contact-number {
+  font-size: 0.775rem;
+  color: var(--grey-d-1);
+}
+.category {
+  width: 30%;
+}
+.category > .business {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.06rem !important;
+  width: 100%;
+}
+.category > .alternate {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--grey-d-1);
+}
+.category > p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--grey-d-1);
+}
+.category > p::after {
+  content: "*";
+  color: var(--red);
+}
+.search-tag {
+  margin-top: 1.5rem;
+}
+.search-tag > div:nth-child(1) {
+  color: var(--blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.search-tag > div:nth-child(2) {
+  margin-top: 0.1rem;
+  font-size: 0.775rem;
+  color: var(--grey-d-1);
+}
+/*-----------------
+  Category css end
+------------------*/
+
+/*------------------------------------
+  Use Media querey for mobile responsive
+  --------------------------------------*/
+@media (max-width: 765px) {
+  .category {
+    width: 100%;
+  }
+}
